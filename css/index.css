@@ -1,5 +1,15 @@
+h1,
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 h1 {
   color: white;
+}
+h2 {
+  font-size: 300%;
+  text-align: center;
 }
 .main-nav {
   float: right;
@@ -16,10 +26,10 @@ h1 {
   font-size: 100%;
 }
 footer {
-  color: black;
-  background: lightgrey;
+  color: white;
+  background: #232f3e;
   padding: 20px 0;
-  border-radius: 10px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +40,10 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 5%;
+  text-align: center;
+}
+section {
+  padding: 80px 0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -192,9 +206,7 @@ header {
 .btn {
   padding: 10px 30px;
   border-radius: 200px;
-}
-.btn-sign {
-  background-color: aqua;
+  background-color: #4b5858;
 }
 @font-face {
   font-family: 'PT Sans';
@@ -321,5 +333,43 @@ img {
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+  }
+  .header-nav {
+    border-top: 1px solid lightgrey;
+    height: 300px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    height: 400px;
+  }
+  .header-nav {
+    border-bottom: 1px solid lightgrey;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-nav .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }

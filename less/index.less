@@ -10,24 +10,42 @@
 @import './mixins';
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
 @import "Slideshow.less";
-// * {
-//   box-sizing: border-box;
-// }
+@media (max-width: 500px) {
+    .container {
+      height: 100%;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 10px;
+      text-align: center;
+      position: relative;
+    }
+    .header-nav {
+      border-top: 1px solid lightgrey;
+      height: 300px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      height: 400px;
+    }
+    .header-nav  {
+      border-bottom: 1px solid lightgrey;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main-nav .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-// html, body {
-//   margin: 0; 
-//   padding: 0;
-// }
-
-// body {
-//   .flex(none, center, column);
-//   background-color: @lambda-times-color-background;
-//   color: @lambda-times-color-primary;
-//   font-family: 'PT Sans', sans-serif;
-// }
-
-// @import './components/TopBar/TopBar';
-// @import './components/Header/Header';
-// @import './components/Tabs/Tabs';
-// @import './components/Cards/Cards';
-// @import './components/Carousel/Carousel';
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
